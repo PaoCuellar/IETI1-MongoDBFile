@@ -19,7 +19,7 @@ Create Spring Boot API that allows uploading and serving files.
 2. Run the project.
 
 3. Go to your database and verify that the file was created under a fs.files and fs.chunks documents. 
-
+ ![](img/mongodb.png)
 4. Go to the *RESTController* class and inject the *GridFsTemplate* bean by using the *@Autowired* annotation.
 
 5. Implement the *getFileByName* method:
@@ -42,7 +42,7 @@ Create Spring Boot API that allows uploading and serving files.
         ````    
     
 5. Verify that the *getFileByName* endpoint works and it does returns the *lion.jpeg* file created on step 2 when requested by name.
-
+   ![](img/lion.png)
 
 6. Implement the *handleFileUpload* method. Make sure you return the static url to access the uploaded file by using the *getFileByName* endpoint.
 
